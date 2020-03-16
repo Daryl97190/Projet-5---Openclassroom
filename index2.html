@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <!--Encodage-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Imaginez un générateur de citations">
+    <meta name="author" content="Daryl LIVIO">
+    <!--Boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="image/p5.png" type="image/x-icon">
+    <title> PROJET 5 : Générateur de citations de rap</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        h1 {
+
+            font-weight: bold;
+            color: brown
+        }
+
+        #phrase {
+            font-style: italic;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <h1> Bienvenue dans le Générateur de citations de Rap </h1>
+    </div>
+    <div class="container text-center">
+        <br>
+        <ol>
+            <li>Choisir le nombre de citations générées (de 1 à 5).</li>
+            <li>Choisir entre 2 types de générateurs de citations (vous devrez donc avoir 2 ensembles de phrases).</li>
+            <li>Une fois les citations générées, proposer de générer de nouvelles citations ou d'arrêter le programme.
+            </li>
+        </ol>
+    </div>
+    <div class="container text-center">
+        <h3>Vous avez la possibilité de choisir entre ces deux rappeurs célébres</h3>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <hr>
+                    <h4 class="text-center ">Booba</h4>
+                    <p>Booba, de son vrai nom Élie Yaffa, né le 9 décembre 1976 à Boulogne-Billancourt dans les
+                        Hauts-de-Seine, est un rappeur
+                        français. Il est membre du 92i, un collectif de rap français dont il est également le fondateur.
+                    </p>
+                    <img src="image/photo_booba.jpg" alt="">
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                    <div id="content">
+                        <div id="divform">
+                            <form>
+                                <label>Indiquez le nombre de citations à générer: </label><br />
+                                <input id="nbcitation" type="number" max="5" min="1" value="1" /><br />
+
+                                <label>Sélectionnez le type de citation:</label><br />
+                                <input id="booba" type="radio" name="type" value="type1" /><label>Booba</label>
+                                <input id="rohff" type="radio" name="type" value="type2" /><label>Rohff</label>
+                            </form>
+                            <div class="col-md-4 col-lg-4 col-sm-12">
+                            </div>
+                            <div id="divbtn">
+                                <button type="button" class="btn btn-primary btn-lg"
+                                    onclick="CitationsBooba.citationKopp()">
+                                    Les pros-Booba</button>
+                                <button type="button" class="btn btn-primary btn-lg"
+                                    onclick="CitationsRohff.citationHoussni()">Les pros-Rohff</button>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div id="divresult">
+                        <div id="phrase"></div>
+
+                        <button type="button" class="btn btn-success btn-lg" onclick="stop()">Arreter le
+                            générateur</button>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <hr>
+                    <h4 class="text-center ">Rohff</h4>
+                    <p>Rohff2, de son vrai nom Housni Mkouboi1, né le 15 décembre 19771,3 à Antananarivo (Madagascar),
+                        est un rappeur français
+                        d'origine comorienne. Rohff possède sa propre marque de vêtement.</p>
+                    <img src="image/photo_rohff.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <br>
+            <a href="index.html">Allez au générateur de citations</a>
+        </div>
+    </div>
+    <!--JQUERY, Popper, Boostrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="app2.js"></script>
+</body>
+
+</html>

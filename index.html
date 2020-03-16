@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!--Encodage-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Imaginez un générateur de citations">
+  <meta name="author" content="Daryl LIVIO">
+  <!--Boostrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="image/p5.png" type="image/x-icon">
+  <title>PROJET 5 : Générateur de citations</title>
+  <style>
+    h1 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    .citation {
+      font-style: italic;
+      color: brown;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid text-center">
+    <h1> Bienvenue dans le Générateur de citations</h1>
+  </div>
+  <div class="container text-center">
+    <h2>Consigne</h2>
+    <p> A votre tour de créer un générateur de citation Vous devez respecter les consignes suivantes : </p>
+    <ol>
+      <li>Les citations sont générées aléatoirement une par une à chaque appel du programme JavaScript</li>
+      <li>Chaque citation est la combinaison d'au moins 3 morceaux de phrases (à vous de préparer ces morceaux de
+        phrase).
+      </li>
+      <li>A défaut d'être intelligible, la phrase doit être cohérente (pas de point d'exclamation au milieu d'une
+        phrase).
+      </li>
+    </ol>
+  </div>
+  <!--Appel de Bootstrap pour citation et boutton-->
+
+  <div class="container text-center">
+    <blockquote class="blockquote text-center">
+      <p class="citation" class="mb-0">Les citations vont s'afficher ici.</p>
+      <footer class="blockquote-footer">Daryl Livio</footer>
+    </blockquote>
+    <button id="generer" class="btn btn-primary btn-lg" type="button">Générer vos citations</button>
+    <button type="button" class="btn btn-secondary btn-lg" onclick="stop()">Arreter le générateur</button>
+  </div>
+
+  <div class="container text-center">
+    <br>
+    <a href="index2.html">Allez au générateur de citations Rap </a>
+  </div>
+
+  <!--JQUERY, Popper, Boostrap JS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
